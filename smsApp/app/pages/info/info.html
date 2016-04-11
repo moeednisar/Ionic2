@@ -1,0 +1,57 @@
+<ion-navbar *navbar>  
+  <ion-title>
+    {{name}} Info
+  </ion-title>
+</ion-navbar>
+
+
+<ion-content class="has-header components-demo">
+<ion-list>
+<ion-list-header>
+    ID
+  </ion-list-header>
+  <ion-item class="border">
+    {{_id}}
+  </ion-item>
+<ion-list-header>
+    Name
+  </ion-list-header>
+  <ion-item class="border">
+    {{name}}
+  </ion-item>
+<ion-list-header>
+    Father Name
+  </ion-list-header>
+    <ion-item class="border">
+    {{fname}}
+  </ion-item>
+<ion-list-header>
+    Age
+  </ion-list-header>
+    <ion-item class="border">
+    {{age}}
+  </ion-item>
+<ion-list-header>
+    Class
+  </ion-list-header>
+    <ion-item class="border">
+    {{classs}}
+  </ion-item>
+<ion-list-header>
+    Email
+  </ion-list-header>
+    <ion-item class="border">
+    {{email}}
+  </ion-item>
+<ion-list-header>
+    Mobile
+  </ion-list-header>
+    <ion-item class="border">
+    {{mobile}}
+  </ion-item>
+</ion-list>
+<div padding>
+      <a block id="editButton" class="editButton" (click) = "editStudent(student)" name="{{_id}}">Edit Student</a>  
+      <a block id="deleteButton" class="deleteButton" (click)="deleteStudent(student)">Delete Student</a>      
+</div>
+</ion-content>

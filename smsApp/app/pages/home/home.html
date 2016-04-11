@@ -1,0 +1,23 @@
+<ion-navbar *navbar>
+<!-- <button light block (click)="addStudent()">Goto Home</button> -->
+  <ion-title>
+    SMS App
+  </ion-title>
+</ion-navbar>
+
+
+<ion-content class="home">
+  <ion-card *ngFor= "#student of SMSs" [SMS]="student">   
+    <ion-list>
+    <a (click)="getStudent(student)" style="cursor: pointer;">
+      <button ion-item>
+        <ion-icon name="contact" md="md-contact" item-left></ion-icon>
+        {{student.name}}
+      </button>
+    </a>
+    </ion-list>   
+  </ion-card>
+  <button fab danger fab-bottom fab-right (click)="addStudent()">
+      <ion-icon name='add'></ion-icon>
+  </button>
+</ion-content>

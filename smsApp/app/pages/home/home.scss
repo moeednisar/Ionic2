@@ -1,0 +1,102 @@
+
+.home {
+  overflow: hidden;
+  width:100%;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: transparent;
+}
+
+ion-list .item-inner {
+    border-bottom: none !important;
+}
+
+.toolbar {
+    padding: 4px;
+    min-height: 44px;
+    text-align: center;
+}
+
+.toolbar-title{
+	color: #fff;
+}
+
+.toolbar-background {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #1488E6;
+    background: #1488E6;
+}
+
+[fab-bottom] {
+    position: absolute;
+    bottom: 2%;
+    float:right;
+    right: 2%;
+}
+scroll-content {
+	overflow-y: scroll;
+	padding-right: 15px;
+	width: 101%;
+}
+
+.button-fab {
+	width: 46px;
+	height:46px;
+	z-index: 2;
+}
+
+.bar-button-default {
+	z-index: 2;
+	color:white;
+}
+
+.bar-button-default:hover:not(.disable-hover){ 
+	color:white;
+}
+
+.border{
+	border-bottom: 1px solid #c8c7cc;
+}
+
+.has-error{
+	border-bottom:1px solid red;
+}
+
+ion-list-header{
+	background-color: #F1F1F1;
+}
+
+.deleteButton{
+	width:100%;
+	background-color: #f53d3d;
+	text-align: center;
+	color:#fff;
+	height: 2.8em;
+	display: block;
+	clear: both;
+	font-size: 1.6rem;
+    border-radius: 4px;
+    line-height: 2.6em;
+    cursor: pointer;
+}
+
+.editButton{
+	width:100%;
+	background-color: rgb(20, 136, 230);
+	text-align: center;
+	color:#fff;
+	height: 2.8em;
+	margin-bottom: 3px;
+	display: block;
+	clear: both;
+	font-size: 1.6rem;
+    border-radius: 4px;
+    line-height: 2.6em;
+    cursor: pointer;
+}

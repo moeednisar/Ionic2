@@ -1,0 +1,51 @@
+<ion-navbar *navbar>  
+  <ion-title>
+    Update Student
+  </ion-title>
+</ion-navbar>
+
+
+<ion-content class="has-header components-demo">
+<form [ngFormModel]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+  <ion-list>
+
+  <ion-item class="border">
+    <ion-label stacked>Student Name</ion-label>    
+    <ion-input type="text" name="name" [ngFormControl]='name' [class.has-error]="!name.valid && name.touched"></ion-input>
+    <ion-input type="text" name="id" [ngFormControl]='id' *ngIf = "isShow"></ion-input>
+  </ion-item>
+
+  <ion-item class="border">
+    <ion-label stacked>Father Name</ion-label>
+    <ion-input type="text" name="fname" [ngFormControl]='fname' [class.has-error]="!fname.valid && fname.touched"></ion-input>
+  </ion-item>
+
+  <ion-item class="border">
+    <ion-label stacked>Age</ion-label>
+    <ion-input type="number" name="age" [ngFormControl]='age' [class.has-error]="!age.valid && age.touched"></ion-input>
+  </ion-item>
+
+  <ion-item class="border">
+    <ion-label stacked>Class</ion-label>
+    <ion-input type="text" name="classs" [ngFormControl]='classs' [class.has-error]="!classs.valid && classs.touched"></ion-input>
+  </ion-item>
+
+  <ion-item class="border">
+    <ion-label stacked>Email</ion-label>
+    <ion-input type="email" name="email" [ngFormControl]='email' [class.has-error]="!email.valid && email.touched"></ion-input>
+  </ion-item>
+
+  <ion-item class="border">
+    <ion-label stacked>Mobile No</ion-label>
+    <ion-input type="text" name="mobile" [ngFormControl]='mobile' [class.has-error]="!mobile.valid && mobile.touched"></ion-input>
+  </ion-item>
+
+
+</ion-list>
+
+<div padding>
+      <button primary block type="submit" id="addButton" *ngIf="addButton" [disabled]="!myForm.valid">Add Student</button>
+      <button primary block type="submit" id="updateButton" *ngIf="updateButton" [disabled]="!myForm.valid">Update Student</button>
+</div>
+</form>
+</ion-content>
